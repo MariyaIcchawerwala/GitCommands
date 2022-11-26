@@ -1,0 +1,44 @@
+Git is version control software for developers(process of saving different files or versions throughout the various stages of project).it saves the changes 
+everyone has the copy of repo- distributed version control system
+
+untracked files= nothing relatedd to git your files are not tracked by git
+staging area = when we add the files our files goes to stagged area these files are now ready to commit after the commit  your file has been recored by git and is now unmodified if you modify then again you have to stage it and commit it 
+
+<!-- Commands -->
+*git config --global user.name/email - wehn anyone sees the commit it will show who has done the commits
+
+*git init = it will initialize an empty git folder which will be hidden
+
+*git status = shows the status of files that which files are untracked,which files are in staging area and ready to be commit, which files are modified
+<!-- touch commands to create file -->
+*touch about.html = creates a new file
+<!-- Adding to staging arrea -->
+*git add filename- adds a particular file to staging area
+*git add -A = adds all the files in staging area
+<!-- commit changes -->
+*git commit -m "first commit"
+<!-- to revert back the changes made -->
+checkout - matches your working directory to your last commit
+*git checkout filename = recovers your file
+*git checkout -f = all the files are matched to your last commit
+<!-- to see your commit history -->
+*git log -p -1 = show you last one commit
+<!-- git diff -->
+*git diff = compares your working tree to staging area
+*git diff -- staged = this command will compare your staging area to last commit
+<!-- to remove any file -->
+*git rm filename - this will remove the filr completly deleted 
+*git rm --cached - this will remove it just from staging area it will not be deleted
+<!-- branches -->
+*git branch feature = new branch will be created named feature
+*git checkout feature = it will switch to this branch
+<!-- to merge feature branch into master -->
+first i will come to master branch = git checkout master
+*git merge feature = feature will be merged 
+<!-- short hand to create a branch and switch to it -->
+*git checkout -b branchname
+
+<!-- connecting local git repo to remote git repo -->
+*git remote add origin url
+*git push origin master = push master branch into origin
+*git push -u origin feature 
